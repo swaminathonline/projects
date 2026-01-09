@@ -1,0 +1,119 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+/* 🔐 LOGIN */
+.login-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  width: 320px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.login-box img {
+  width: 80px;
+}
+
+.login-box h2 {
+  margin: 10px 0 0;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #1f2933;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* 📊 DASHBOARD */
+header {
+  background: #111827;
+  color: white;
+  padding: 15px 20px;
+}
+
+header p {
+  color: #9ca3af;
+}
+
+.dashboard {
+  padding: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+#map {
+  height: 450px;
+  border-radius: 8px;
+}
+
+.panel {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
