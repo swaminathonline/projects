@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraksha</title>
+    <link rel="stylesheet" href="/frontend/Home/home.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>
+        <img src="/logo1.png" alt="logo" style="height:30px;vertical-align:middle;">
+        Suraksha
+    </h2>
+</header>
+
+<!-- HERO / DASHBOARD -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Smart Crime Detection & Analysis Platform</h1>
+        <p>
+            <b>Turning data into insight. Turning insight into safety.</b><br>
+            Analyze crime patterns, detect anomalies, and support proactive decision-making using data-driven intelligence.
+        </p>
+
+        <div class="actions">
+            <button class="primary-btn" onclick="requireLogin()">Get Started</button>
+            <button class="outline-btn" onclick="requireLogin()">View Analysis</button>
+        </div>
+    </div>
+</section>
+
+<!-- LOGIN / SIGNUP SECTION -->
+<section class="auth-section" id="auth">
+    <div class="auth-card">
+        <h2 id="auth-title">Login to Continue </h2>
+        <p id="auth-subtitle">Please login to access this feature</p>
+
+        <!-- IMPORTANT: IDs ADDED -->
+        <form id="auth-form">
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                style="display:none"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit" class="primary-btn full">
+                Login
+            </button>
+        </form>
+
+        <p class="toggle-text">
+            Don’t have an account?
+            <span onclick="switchToSignup()">Sign Up</span>
+        </p>
+    </div>
+</section>
+
+<script src="https://techy-ui.github.io/proposal/Frontend/Home/home.js"></script>
+</body>
+</html>

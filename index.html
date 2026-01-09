@@ -1,82 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kerala Police | Crime Analytics</title>
-
-  <!-- Leaflet -->
-  <link rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnityHearts</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" href="/frontend/index/index.css">
 </head>
-
 <body>
-
-<!-- 🔐 LOGIN PAGE -->
-<div id="loginPage" class="login-container">
-  <div class="login-box">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Kerala_Police_Logo.png">
-    <h2>Kerala Police</h2>
-    <p>Crime Analytics Secure Login</p>
-
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
-
-    <button onclick="login()">LOGIN</button>
-    <p id="error"></p>
-  </div>
-</div>
-
-<!-- 📊 DASHBOARD -->
-<div id="dashboard" style="display:none;">
-
-  <header>
-    <h1>🚔 Crime Pattern Prediction Dashboard</h1>
-    <p>Advanced Mathematics-based Predictive Policing</p>
-  </header>
-
-  <div class="dashboard">
-
-    <!-- KPI CARDS -->
-    <div class="cards">
-      <div class="card">
-        <h3>Total Zones</h3>
-        <p id="zonesCount">-</p>
-      </div>
-      <div class="card">
-        <h3>High Risk Zones</h3>
-        <p id="highRiskCount">-</p>
-      </div>
-      <div class="card">
-        <h3>Most Risky Area</h3>
-        <p id="topZone">-</p>
-      </div>
+    <div class="con" >
+        <h1><img src="/logo_name.png"></h1>
+        <p><b>Every crime leaves a pattern. Analysis turns patterns into justice </b></p>
     </div>
-
-    <!-- MAIN -->
-    <div class="main">
-      <div id="map"></div>
-
-      <div class="panel">
-        <h3>📍 Next Crime Prediction</h3>
-        <p id="predictionText"></p>
-        <hr>
-        <h4>Mathematical Models</h4>
-        <ul>
-          <li>Markov Chains</li>
-          <li>Bayesian Probability</li>
-          <li>Graph Theory</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="script.js"></script>
-
+    <script src="/frontend/index/index.js"></script>
 </body>
 </html>

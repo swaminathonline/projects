@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kerala Police | Crime Analytics</title>
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/frontend/Dashboard/dashboard.css">
+</head>
+
+<body>
+
+<!-- 📊 DASHBOARD -->
+<div id="dashboard">
+
+  <header>
+    <h1>🚔 Crime Pattern Prediction Dashboard</h1>
+    <p>Advanced Mathematics-based Predictive Policing</p>
+  </header>
+
+  <div class="dashboard">
+
+    <!-- KPI CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Zones</h3>
+        <p id="zonesCount">-</p>
+      </div>
+
+      <div class="card">
+        <h3>High Risk Zones</h3>
+        <p id="highRiskCount">-</p>
+      </div>
+
+      <div class="card">
+        <h3>Most Risky Area</h3>
+        <p id="topZone">-</p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <!-- MAP -->
+      <div id="map"></div>
+
+      <!-- SIDE PANEL -->
+      <div class="panel">
+        <h3>📍 Next Crime Prediction</h3>
+        <p id="predictionText"></p>
+
+        <hr>
+
+        <h4>Mathematical Models Used</h4>
+        <ul>
+          <li>Markov Chains</li>
+          <li>Bayesian Probability</li>
+          <li>Graph Theory</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/frontend/Dashboard/dashboard.js"></script>
+
+</body>
+</html>
